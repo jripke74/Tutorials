@@ -11,6 +11,5 @@
 @interface HTTPService : NSObject
 
 + (id) instance;
-- (void) test;
 
 @end
