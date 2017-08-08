@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HTTPService.h"
 
 @interface ViewController ()
 
@@ -14,6 +15,10 @@
 
 @implementation ViewController
 
+- (void) viewDidLoad {
+    [super viewDidLoad];
+    [[HTTPService instance] test];
+}
 
 
 @end
