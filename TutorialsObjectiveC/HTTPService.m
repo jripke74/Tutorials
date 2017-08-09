@@ -29,7 +29,7 @@
     [[session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (data != nil) {
             NSError *err;
-            NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&err];
+            NSArray *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&err];
             if (err == nil) {
                 completionHandler(json, nil);
             } else {

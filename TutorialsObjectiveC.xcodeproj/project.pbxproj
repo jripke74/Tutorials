@@ -15,6 +15,7 @@
 		899AC2B41F3A6AB10000B167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 899AC2B21F3A6AB10000B167 /* LaunchScreen.storyboard */; };
 		899AC2BE1F3A6BF80000B167 /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 899AC2BD1F3A6BF80000B167 /* HTTPService.m */; };
 		899AC2C41F3A89390000B167 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 899AC2C31F3A89390000B167 /* VideoCell.m */; };
+		89A500C51F3BB9F50010CBFB /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A500C41F3BB9F50010CBFB /* Video.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		899AC2BD1F3A6BF80000B167 /* HTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
 		899AC2C21F3A89390000B167 /* VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
 		899AC2C31F3A89390000B167 /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
+		89A500C31F3BB9F50010CBFB /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		89A500C41F3BB9F50010CBFB /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 		899AC2A31F3A6AB10000B167 /* TutorialsObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				89A500C21F3BB9D70010CBFB /* Model */,
 				899AC2C11F3A88FA0000B167 /* View */,
 				899AC2BB1F3A6BDE0000B167 /* Services */,
 				899AC2A71F3A6AB10000B167 /* AppDelegate.h */,
@@ -103,6 +107,15 @@
 				899AC2C31F3A89390000B167 /* VideoCell.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		89A500C21F3BB9D70010CBFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89A500C31F3BB9F50010CBFB /* Video.h */,
+				89A500C41F3BB9F50010CBFB /* Video.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +193,7 @@
 				899AC2AC1F3A6AB10000B167 /* ViewController.m in Sources */,
 				899AC2C41F3A89390000B167 /* VideoCell.m in Sources */,
 				899AC2BE1F3A6BF80000B167 /* HTTPService.m in Sources */,
+				89A500C51F3BB9F50010CBFB /* Video.m in Sources */,
 				899AC2A91F3A6AB10000B167 /* AppDelegate.m in Sources */,
 				899AC2A61F3A6AB10000B167 /* main.m in Sources */,
 			);
@@ -342,6 +356,7 @@
 				899AC2BA1F3A6AB10000B167 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

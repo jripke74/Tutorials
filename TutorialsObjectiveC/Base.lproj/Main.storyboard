@@ -32,6 +32,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="76" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lDH-yu-vmq">
                                 <rect key="frame" x="16" y="38" width="343" height="629"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="76" id="cVv-At-MGm" customClass="VideoCell">
                                         <rect key="frame" x="0.0" y="28" width="343" height="76"/>
@@ -63,7 +64,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="RFz-Vu-mLL" firstAttribute="top" secondItem="V2M-2Z-odv" secondAttribute="top" constant="8" id="884-y5-JKw"/>
                                                         <constraint firstAttribute="bottom" secondItem="RFz-Vu-mLL" secondAttribute="bottom" constant="8" id="JFb-WO-ped"/>
@@ -74,7 +75,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="V2M-2Z-odv" firstAttribute="top" secondItem="sxL-bC-93P" secondAttribute="topMargin" id="0cW-Sv-oiU"/>
                                                 <constraint firstItem="V2M-2Z-odv" firstAttribute="leading" secondItem="sxL-bC-93P" secondAttribute="leadingMargin" id="DGG-kb-Pmt"/>
@@ -83,6 +84,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="cellView" destination="V2M-2Z-odv" id="92n-8y-TRg"/>
                                             <outlet property="descriptionLabel" destination="tyA-2E-Rrv" id="Xsk-RC-qPH"/>
@@ -104,6 +106,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lDH-yu-vmq" secondAttribute="bottom" id="yij-uy-Jx6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="lDH-yu-vmq" id="VCE-2b-yjT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
