@@ -16,6 +16,7 @@
 		899AC2BE1F3A6BF80000B167 /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 899AC2BD1F3A6BF80000B167 /* HTTPService.m */; };
 		899AC2C41F3A89390000B167 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 899AC2C31F3A89390000B167 /* VideoCell.m */; };
 		89A500C51F3BB9F50010CBFB /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A500C41F3BB9F50010CBFB /* Video.m */; };
+		89A500C71F3BC6430010CBFB /* jeffRipke.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89A500C61F3BC6430010CBFB /* jeffRipke.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		899AC2C31F3A89390000B167 /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
 		89A500C31F3BB9F50010CBFB /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
 		89A500C41F3BB9F50010CBFB /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		89A500C61F3BC6430010CBFB /* jeffRipke.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jeffRipke.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				899AC2A81F3A6AB10000B167 /* AppDelegate.m */,
 				899AC2AA1F3A6AB10000B167 /* ViewController.h */,
 				899AC2AB1F3A6AB10000B167 /* ViewController.m */,
+				89A500C61F3BC6430010CBFB /* jeffRipke.jpg */,
 				899AC2AD1F3A6AB10000B167 /* Main.storyboard */,
 				899AC2B01F3A6AB10000B167 /* Assets.xcassets */,
 				899AC2B21F3A6AB10000B167 /* LaunchScreen.storyboard */,
@@ -179,6 +182,7 @@
 			files = (
 				899AC2B41F3A6AB10000B167 /* LaunchScreen.storyboard in Resources */,
 				899AC2B11F3A6AB10000B167 /* Assets.xcassets in Resources */,
+				89A500C71F3BC6430010CBFB /* jeffRipke.jpg in Resources */,
 				899AC2AF1F3A6AB10000B167 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

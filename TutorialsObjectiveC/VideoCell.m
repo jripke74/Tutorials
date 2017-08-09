@@ -7,6 +7,7 @@
 //
 
 #import "VideoCell.h"
+#import "Video.h"
 
 @interface VideoCell()
 
@@ -26,6 +27,12 @@
     self.layer.shadowOpacity = 0.8;
     self.layer.shadowRadius = 5.0;
     self.layer.shadowOffset = CGSizeMake(0.0, 2.0);
+}
+
+- (void)updateUI: (nonnull Video*)video {
+    self.titleLabel.text = video.videoTitle;
+    self.descriptionLabel.text = video.videoDescription;
+    self.thumbnailImage.image = [UIImage imageNamed:@"jeffripke.jpg"];
 }
 
 @end
