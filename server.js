@@ -17,13 +17,13 @@ var tutorials = [
                  id: 1,
                  title: "Swift 3 Tutorial",
                  description: "Learn Swift with one video",
-                 iframe: '<iframe width="560" height="315" src="https://www.youtube.com/embed/dKaojOZ-az8" frameborder="0" allowfullscreen></iframe>'
+                 iframe: '<div class="continer"><iframe class="video" src="https://www.youtube.com/embed/dKaojOZ-az8" frameborder="0" allowfullscreen></iframe></div>'
 },
                  {
                  id: 2,
                  title: "Swift 3 Tutorial",
                  description: "Learn Swift with one video",
-                 iframe: '<iframe width="560" height="315" src="https://www.youtube.com/embed/dKaojOZ-az8" frameborder="0" allowfullscreen></iframe>'
+                 iframe: '<div class="continer"><iframe class="video" height="315" src="https://www.youtube.com/embed/dKaojOZ-az8" frameborder="0" allowfullscreen></iframe></div>'
                  }
                  ];
 
