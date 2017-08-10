@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		894660F11F3D17980002FB9A /* VideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 894660F01F3D17980002FB9A /* VideoVC.m */; };
 		899AC2A61F3A6AB10000B167 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 899AC2A51F3A6AB10000B167 /* main.m */; };
 		899AC2A91F3A6AB10000B167 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 899AC2A81F3A6AB10000B167 /* AppDelegate.m */; };
 		899AC2AC1F3A6AB10000B167 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 899AC2AB1F3A6AB10000B167 /* ViewController.m */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		894660EF1F3D17980002FB9A /* VideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoVC.h; sourceTree = "<group>"; };
+		894660F01F3D17980002FB9A /* VideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoVC.m; sourceTree = "<group>"; };
 		899AC2A11F3A6AB10000B167 /* TutorialsObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutorialsObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		899AC2A51F3A6AB10000B167 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		899AC2A71F3A6AB10000B167 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,6 +53,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		894660EE1F3D17580002FB9A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				899AC2AA1F3A6AB10000B167 /* ViewController.h */,
+				899AC2AB1F3A6AB10000B167 /* ViewController.m */,
+				894660EF1F3D17980002FB9A /* VideoVC.h */,
+				894660F01F3D17980002FB9A /* VideoVC.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		899AC2981F3A6AB10000B167 = {
 			isa = PBXGroup;
 			children = (
@@ -69,13 +83,12 @@
 		899AC2A31F3A6AB10000B167 /* TutorialsObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				894660EE1F3D17580002FB9A /* Controller */,
 				89A500C21F3BB9D70010CBFB /* Model */,
 				899AC2C11F3A88FA0000B167 /* View */,
 				899AC2BB1F3A6BDE0000B167 /* Services */,
 				899AC2A71F3A6AB10000B167 /* AppDelegate.h */,
 				899AC2A81F3A6AB10000B167 /* AppDelegate.m */,
-				899AC2AA1F3A6AB10000B167 /* ViewController.h */,
-				899AC2AB1F3A6AB10000B167 /* ViewController.m */,
 				89A500C61F3BC6430010CBFB /* jeffRipke.jpg */,
 				899AC2AD1F3A6AB10000B167 /* Main.storyboard */,
 				899AC2B01F3A6AB10000B167 /* Assets.xcassets */,
@@ -198,6 +211,7 @@
 				899AC2C41F3A89390000B167 /* VideoCell.m in Sources */,
 				899AC2BE1F3A6BF80000B167 /* HTTPService.m in Sources */,
 				89A500C51F3BB9F50010CBFB /* Video.m in Sources */,
+				894660F11F3D17980002FB9A /* VideoVC.m in Sources */,
 				899AC2A91F3A6AB10000B167 /* AppDelegate.m in Sources */,
 				899AC2A61F3A6AB10000B167 /* main.m in Sources */,
 			);

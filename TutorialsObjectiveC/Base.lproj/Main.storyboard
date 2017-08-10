@@ -108,11 +108,90 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="lDH-yu-vmq" id="VCE-2b-yjT"/>
+                        <segue destination="tda-4I-N2C" kind="presentation" id="NMc-3S-hgj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="s2W-qg-8w6">
+            <objects>
+                <viewController id="tda-4I-N2C" customClass="VideoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G3x-tw-U20"/>
+                        <viewControllerLayoutGuide type="bottom" id="rue-6B-c4i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vEb-KY-Jhu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlu-ED-Sj7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="275"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="275" id="P2i-1Z-4Iy"/>
+                                </constraints>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a Swift basic tutorial for beginners, This is a Swift basic tutorial for beginners" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkM-dT-L01">
+                                <rect key="frame" x="16" y="290" width="343" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="SVl-Ig-4Wr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEr-bB-Mef">
+                                <rect key="frame" x="16" y="356" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="mie-DO-vVW"/>
+                                </constraints>
+                                <string key="text">This is a Swift basic tutorial for beginners, This is a Swift basic tutorial for beginnersThis is a Swift basic tutorial for beginners, This is a Swift basic tutorial for beginners</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0x-R0-cZC">
+                                <rect key="frame" x="16" y="594" width="343" height="53"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="VW2-9n-tId"/>
+                                </constraints>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="tda-4I-N2C" eventType="touchUpInside" id="5YB-Ld-0bi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rlu-ED-Sj7" secondAttribute="trailing" id="A5j-ai-gds"/>
+                            <constraint firstItem="BEr-bB-Mef" firstAttribute="top" secondItem="bkM-dT-L01" secondAttribute="bottom" constant="15" id="B9l-Gu-QTl"/>
+                            <constraint firstItem="d0x-R0-cZC" firstAttribute="trailing" secondItem="vEb-KY-Jhu" secondAttribute="trailingMargin" id="Qs4-3b-Ctc"/>
+                            <constraint firstItem="rlu-ED-Sj7" firstAttribute="leading" secondItem="vEb-KY-Jhu" secondAttribute="leading" id="WlX-o1-tYx"/>
+                            <constraint firstItem="BEr-bB-Mef" firstAttribute="leading" secondItem="vEb-KY-Jhu" secondAttribute="leadingMargin" id="aEn-lG-RpZ"/>
+                            <constraint firstItem="bkM-dT-L01" firstAttribute="leading" secondItem="vEb-KY-Jhu" secondAttribute="leadingMargin" id="cRR-BA-XLT"/>
+                            <constraint firstItem="bkM-dT-L01" firstAttribute="top" secondItem="rlu-ED-Sj7" secondAttribute="bottom" constant="15" id="eyF-BK-jTq"/>
+                            <constraint firstItem="bkM-dT-L01" firstAttribute="trailing" secondItem="vEb-KY-Jhu" secondAttribute="trailingMargin" id="mMh-2a-G1R"/>
+                            <constraint firstItem="d0x-R0-cZC" firstAttribute="leading" secondItem="vEb-KY-Jhu" secondAttribute="leadingMargin" id="pqr-2N-Sst"/>
+                            <constraint firstItem="rue-6B-c4i" firstAttribute="top" secondItem="d0x-R0-cZC" secondAttribute="bottom" constant="20" id="xbf-UG-K1l"/>
+                            <constraint firstItem="rlu-ED-Sj7" firstAttribute="top" secondItem="vEb-KY-Jhu" secondAttribute="top" id="xhI-v5-ydW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BEr-bB-Mef" secondAttribute="trailing" id="yzq-5C-llh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="BEr-bB-Mef" id="9RG-UQ-kQK"/>
+                        <outlet property="titleLabel" destination="bkM-dT-L01" id="LVZ-dk-EYY"/>
+                        <outlet property="webView" destination="rlu-ED-Sj7" id="pmr-6f-kS2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nAx-MU-LIS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="122.78860569715144"/>
         </scene>
     </scenes>
 </document>
