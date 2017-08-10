@@ -108,7 +108,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="lDH-yu-vmq" id="VCE-2b-yjT"/>
-                        <segue destination="tda-4I-N2C" kind="presentation" id="NMc-3S-hgj"/>
+                        <segue destination="tda-4I-N2C" kind="presentation" identifier="videoVC" id="NMc-3S-hgj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

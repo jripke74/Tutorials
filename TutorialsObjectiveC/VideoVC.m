@@ -7,6 +7,7 @@
 //
 
 #import "VideoVC.h"
+#import "Video.h"
 
 @interface VideoVC ()
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
@@ -17,6 +18,12 @@
 
 @implementation VideoVC
 
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    self.titleLabel.text = self.video.videoTitle;
+    self.descriptionLabel.text = self.video.videoDescription;
+    [self.webView loadHTMLString:self.video.videoIframe baseURL:nil];
+}
 - (IBAction)donePressed:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
